@@ -79,7 +79,7 @@ let chemexPower = document.getElementById("chemex_power");
 //Enough $$
 buyChemex.addEventListener("click", function() {
     if (score >= 10) { //chemexPrice??
-        alert("Congratulations on you purchase!");
+        // alert("Congratulations on you purchase!");
             score -= 10;
             pro1 += 1;
             eachClick += pro1;
@@ -103,7 +103,7 @@ let frenchPower = document.getElementById("french_power");
 //Enough $$
 buyFrench.addEventListener("click", function() {
     if (score >= 50) { //frenchPrice??
-        alert("Congratulations on you purchase!");
+        // alert("Congratulations on you purchase!");
             score -= 50;
             pro2 += 2;
             eachClick += pro2;
@@ -128,7 +128,7 @@ let keurigPower = document.getElementById("keurig_power");
 //Enough $$
 buyKeurig.addEventListener("click", function() {
     if (score >= 100) { //keurigPrice??
-        alert("Congratulations on you purchase!");
+        // alert("Congratulations on you purchase!");
             score -= 100;
             pro3 += 5;
             eachClick += pro3;
