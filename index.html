@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./style.css" />
+    <title>Click, Clicks, Clicker</title>
+</head>
+
+<body>
+  <!-- This holds both columns in the page -->
+  <div class="big-container"> 
+    <!-- left side -->
+    <div class="column">
+      <!-- This is where the click and coffee live -->
+      <div class="container-left">
+        <div class="counter">Coffee: <span id="scored">0</span></div> <!--THE SCORE-->
+        <div class="cps-container"><span id="cps">0</span> coffees per second</div> <!--Auto counter-->
+        <!-- need to change the onclick to a event sumthing sumthing -->
+        <div><img id="coffee_cup" src="Coffee_cup_icon.svg" alt="Click on this Coffee Cup!"/></div>
+      </div>
+    </div>
+    <!-- right side -->
+    <div class="column">
+      <div class="top-right">Coffee Producers</div>
+      <div class="container right" id="producer_container">
+          <!-- each producer -->
+    
+          <!-- PRODUCER 1 -->
+          <div class="producer1">
+            <div class="pro-left">
+              <div class="pro-name">Chemex</div>
+              <button type="button" id="buy_chemex">Buy</button>
+            </div>
+            <div class="pro-right">
+              <div>Quantity: <span id="chemex_qty">0</span></div>
+              <div>Coffees/second (&click!): <span id="chemex_power">1</span></div>
+              <div>Cost <span id="chemex_price">10</span> coffees</div>
+            </div>
+          </div>
+  
+          <!-- PRODUCER 2 -->
+          <div class="producer2">
+            <div class="pro-left">
+              <div class="pro-name">French Press</div>
+              <button type="button" id="buy_french">Buy</button>
+            </div>
+            <div class="pro-right">
+              <div>Quantity: <span id="french_qty">0</span></div>
+              <div>Coffees/second (&click!): <span id="french_power">2</span></div>
+              <div>Cost <span id="french_price">50</span> coffees</div>
+            </div>
+          </div>
+
+          <!-- PRODUCER 3 -->
+          <div class="producer3">
+            <div class="pro-left">
+              <div class="pro-name">Keurig</div>
+              <button type="button" id="buy_keurig">Buy</button>
+            </div>
+            <div class="pro-right">
+              <div>Quantity: <span id="keurig_qty">0</span></div>
+              <div>Coffees/second (&click!): <span id="keurig_power">5</span></div>
+              <div>Cost <span id="keurig_price">100</span> coffees</div>
+            </div>
+          </div>
+      </div>
+  
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
