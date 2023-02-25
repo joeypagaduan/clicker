@@ -32,29 +32,17 @@ function speedUpdate () {
 ///Show/Hide Producers
 const chemex = document.querySelector('.producer1');
 function showPro1 () {
-    if (score < 10) {
-        chemex.style.display = 'none';
-    } else {
-        chemex.style.display = 'flex';
-        }
+    if (score >= 10) { chemex.classList.add('visible'); }
 }
 
 const french = document.querySelector('.producer2');
 function showPro2 () {
-    if (score < 50) {
-        french.style.display = 'none';
-    } else {
-        french.style.display = 'flex';
-        }
+    if (score >= 50) { french.classList.add('visible'); }
 }
 
 const keurig = document.querySelector('.producer3');
 function showPro3 () {
-    if (score < 100) {
-        keurig.style.display = 'none';
-    } else {
-        keurig.style.display = 'flex';
-        }
+    if (score >= 100) { keurig.classList.add('visible'); }
 }
 // function showChemex() {
 //     if (score >= 10) {

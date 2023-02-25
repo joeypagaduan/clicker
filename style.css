@@ -1,5 +1,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Pacifico&display=swap');
 
+[class^="producer"].visible {
+  display: flex;
+}
+
  * {
     box-sizing: border-box;
     background-color: tan;
@@ -70,31 +74,28 @@
   }
   
   .producer1 {
+    display: none;
     margin-bottom: 5px;
     padding: 10px;
     border: 3px solid sienna;
     border-radius: 8px;
-    display: flex;
     justify-content: space-between;
-    /* display: none; */
   }
   .producer2 {
+    display: none;
     margin-bottom: 5px;
     padding: 10px;
     border: 3px solid sienna;
     border-radius: 8px;
-    display: flex;
     justify-content: space-between;
-    /* display: none; */
   }
   .producer3 {
+    display: none;
     margin-bottom: 5px;
     padding: 10px;
     border: 3px solid sienna;
     border-radius: 8px;
-    display: flex;
     justify-content: space-between;
-    /* display: none; */
   }
   .producer-column {
     display: flex;
