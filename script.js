@@ -8,9 +8,7 @@ scoreDisplay.innerHTML = score;
 clicker.addEventListener("click", function() {
     score += eachClick;
     scoreDisplay.innerHTML = score;
-    showPro1 ();
-    showPro2 ();
-    showPro3 ();
+    showProducers();
 });
 //A Function to refresh my count...Why is it when I use this function it doesn't auto-update?
 // let refreshCount = function () {
@@ -25,8 +23,32 @@ let coffeePerSecond = document.getElementById("cps");
 // coffeePerSecond.innerHTML = cps;
 
 function speedUpdate () {
+    const chemexElement = document.getElementById("chemex_price");
+    const chemexValue = Number(chemexElement.innerHTML);
+
+    if (score > chemexValue) {
     coffeePerSecond = pro1 + pro2 + pro3;
     document.getElementById("cps").innerHTML = coffeePerSecond;
+}
+
+const producers = {
+  chemex: { price: 10, owned: 0, coffees_per_second: 1 },
+  french_press: { price: 50, owned: 0, coffees_per_second: 5 },
+  keurig: { price: 100, owned: 0, coffees_per_second: 10 },
+}
+
+// const producers = [
+//   { name: 'chemex', available_at: 10 },
+//   { name: 'french', available_at: 50 },
+//   { name: 'keurig', available_at: 100 }
+// };
+
+function showProducers() {
+  producers.forEach((producer) => {
+    if (score >= producer.available_at) {
+      document.querySelector(`producer-${producer.name}`).classList.add('visible');
+    }
+  });
 }
 
 ///Show/Hide Producers
